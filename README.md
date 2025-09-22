@@ -1,1 +1,1 @@
-manidipa.netlify.app
+https://manidipa.netlify.app/
