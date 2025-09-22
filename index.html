@@ -168,8 +168,8 @@
             box-shadow: 0 20px 50px rgba(0, 245, 255, 0.3);
         }
 
-        /* Skills Section */
-        .skills {
+        /* Experience Section */
+        .experience {
             padding: 6rem 2rem;
             background: #0f0f0f;
         }
@@ -187,6 +187,78 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+        }
+
+        .experience-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .experience-text {
+            padding-right: 2rem;
+        }
+
+        .experience-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #00f5ff;
+        }
+
+        .experience-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #d0d0d0;
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-details {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .experience-details li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #d0d0d0;
+        }
+
+        .experience-details li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #00f5ff;
+        }
+
+        .experience-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .school-photo {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 2px solid transparent;
+            background: linear-gradient(45deg, #00f5ff, #0080ff);
+            padding: 4px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .school-photo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 245, 255, 0.2);
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 6rem 2rem;
+            background: #0f0f0f;
         }
 
         .skills-grid {
@@ -426,6 +498,10 @@
                 height: 300px;
             }
 
+            .experience-content {
+                gap: 3rem;
+            }
+
             .skills-grid {
                 gap: 1.5rem;
             }
@@ -464,6 +540,20 @@
                 margin-top: 2rem;
             }
 
+            .experience-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .experience-text {
+                padding-right: 0;
+                text-align: center;
+            }
+
+            .school-photo {
+                max-width: 400px;
+            }
+
             .nav-links {
                 gap: 1rem;
                 font-size: 0.9rem;
@@ -477,7 +567,7 @@
                 font-size: 1.5rem;
             }
 
-            .skills, .contact {
+            .experience, .skills, .contact {
                 padding: 4rem 1rem;
             }
 
@@ -534,6 +624,18 @@
                 margin-top: 1.5rem;
             }
 
+            .experience-text h3 {
+                font-size: 1.5rem;
+            }
+
+            .experience-text p {
+                font-size: 1rem;
+            }
+
+            .school-photo {
+                max-width: 320px;
+            }
+
             .nav-links {
                 gap: 0.8rem;
                 font-size: 0.85rem;
@@ -543,7 +645,7 @@
                 font-size: 1.3rem;
             }
 
-            .skills, .contact {
+            .experience, .skills, .contact {
                 padding: 3rem 0.5rem;
             }
 
@@ -625,6 +727,10 @@
                 margin-top: 1rem;
             }
 
+            .school-photo {
+                max-width: 280px;
+            }
+
             .nav-container {
                 padding: 0 0.5rem;
             }
@@ -638,7 +744,7 @@
                 font-size: 0.8rem;
             }
 
-            .skills, .contact {
+            .experience, .skills, .contact {
                 padding: 2.5rem 0.3rem;
             }
 
@@ -757,6 +863,7 @@
             <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -776,6 +883,31 @@
             </div>
             <div class="hero-image">
                 <img src="image.png" alt="Profile Picture" class="profile-pic" id="profilePic">
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience animate-on-scroll" id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-content">
+                <div class="experience-text">
+                    <h3>Pearl Rosary School (Bandel Branch)</h3>
+                    <p>As an Office Administrator at Pearl Rosary School, I was responsible for managing daily office operations and ensuring smooth administrative functioning of the institution.</p>
+                    <p>My role involved handling student records, managing communications, coordinating with staff and parents, and maintaining efficient office systems.</p>
+                    <ul class="experience-details">
+                        <li>Managed student admission records and documentation</li>
+                        <li>Handled office correspondence and communication</li>
+                        <li>Coordinated with teaching staff and parents</li>
+                        <li>Maintained office inventory and supplies</li>
+                        <li>Assisted in organizing school events and activities</li>
+                        <li>Managed fee collection and financial records</li>
+                    </ul>
+                </div>
+                <div class="experience-image">
+                    <img src="Experience_1.png" alt="Pearl Rosary School" class="school-photo">
+                </div>
             </div>
         </div>
     </section>
