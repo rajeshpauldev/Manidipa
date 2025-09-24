@@ -1,1 +1,1 @@
-https://manidipa.netlify.app/
+https://manidipa.vercel.app/
